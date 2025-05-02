@@ -1,0 +1,113 @@
+*{
+    background-color: #dddce0;
+    color: #1f1c2c;
+    font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+}
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+ }
+ h1{
+    letter-spacing: 2px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62P-KOUoWl4UyT8C3BIdN-laG8YtJa3-uo-TuZgzPgQGsZPDPO0mXajvtvUCZQnk2PLo&usqp=CAU') center;
+    background-size: cover;
+    background-clip: text;
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    animation: animation 10s linear infinite;
+ }  
+ @keyframes animation {
+    to{
+        background-position-x: -200px;
+    }
+ }
+ .input-form input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #1f1c2c;
+    border-radius: 20px;
+    margin: 5px;
+    outline: none;
+ }
+ p{
+    width: 15ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    font-size: 1.5rem;
+    overflow: hidden;
+    color: rgb(9, 21, 73);
+    animation: typing 2s steps(20) infinite alternate-reverse;
+ }
+ @keyframes typing{
+    from{
+        width: 0ch;
+    }
+ }
+
+ .input-form button{
+    background-color: #1f1c2c;
+    color: rgb(146, 141, 171);
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    margin: 3px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+ }
+ button:active{
+    cursor: pointer;
+    scale: 0.95;
+    transition: all 0.1s;
+    
+ }
+ ::placeholder{
+    color: #1f1c2c;
+ }
+ button:hover{
+    cursor: pointer;
+    transition: all 0.1s;
+    /* transform: translateY(-3px); */
+    
+ }
+ .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 20px;
+ }
+ .continaer-item{
+    margin-top: 50px;
+    letter-spacing: 0.1em;
+ }
+ .item-buttons button{
+    /* background-color: #1f1c2c;
+    color: rgb(146, 141, 171); */
+    padding: 5px;
+    border: none;
+    width: 55px;
+    margin: 5px;
+    border-radius: 15px;
+ }
+ button:nth-child(1){
+    background-color: tomato;
+    color: #1f1c2c;
+ }
+ .item-buttons button:nth-child(2) {
+    background-color: dodgerblue;
+    color: #1f1c2c;
+ }
+ .items i{
+    font-size: 25px;
+ }
+ .no-list{
+    color: rgb(8, 33, 59);
+ }
